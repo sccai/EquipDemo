@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ParamterInfoModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <!--打印模块 start-->
+ <Print1Using>false</Print1Using> 
+ <Print2Using>false</Print2Using> 
+ <Print3Using>false</Print3Using> 
+ <PrintModel1>true</PrintModel1> 
+ <PrintModel2>false</PrintModel2> 
+ <PrintModel3>false</PrintModel3> 
+ <!--打印模块 end-->
+</ParamterInfoModel>

@@ -1,0 +1,1936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1554</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1554</width>
+    <height>1500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>制作程序</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1400</x>
+      <y>270</y>
+      <width>151</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">      QGroupBox {
+            border-color: rgb(156, 156, 156);
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 0.5ex;
+			 background-color:grey;
+        }
+        QGroupBox::title {
+            subcontrol-origin: margin;
+            subcontrol-position: top left;
+            left: 10px;
+            margin-left: 2px;
+            padding: 0  0px;
+        }</string>
+    </property>
+    <property name="title">
+     <string>发卡器</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_SendCardInit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>初始化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SendCard">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>发卡</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Stop">
+    <property name="geometry">
+     <rect>
+      <x>1410</x>
+      <y>900</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>停止</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Start">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>900</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>590</y>
+      <width>491</width>
+      <height>171</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Pause">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>900</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>暂停</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_SendMod">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>270</y>
+      <width>151</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">      QGroupBox {
+            border-color: rgb(156, 156, 156);
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 0.5ex;
+			 background-color:grey;
+        }
+        QGroupBox::title {
+            subcontrol-origin: margin;
+            subcontrol-position: top left;
+            left: 10px;
+            margin-left: 2px;
+            padding: 0  0px;
+        }</string>
+    </property>
+    <property name="title">
+     <string>进卡机构</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_SmInit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>初始化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipin">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>转向进卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipout">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>转向出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmCleanIn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清洁进卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmCleanOut">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清洁出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmCleanCache">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>缓冲出卡</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_PrintMod1">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>270</y>
+      <width>151</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">      QGroupBox {
+            border-color: rgb(156, 156, 156);
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 0.5ex;
+			 background-color:grey;
+        }
+        QGroupBox::title {
+            subcontrol-origin: margin;
+            subcontrol-position: top left;
+            left: 10px;
+            margin-left: 2px;
+            padding: 0  0px;
+        }</string>
+    </property>
+    <property name="title">
+     <string>打印模块1</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_PrintMod1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>初始化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM1_WriteIn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>写卡进卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM1_WriteOut">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>写卡出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM1_Long">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>长轨道过卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM1_POut">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打印机出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM1_S2Out">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>轨道2出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM1_PIn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打印机进卡</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_Lam">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>270</y>
+      <width>151</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">      QGroupBox {
+            border-color: rgb(156, 156, 156);
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 0.5ex;
+			 background-color:grey;
+        }
+        QGroupBox::title {
+            subcontrol-origin: margin;
+            subcontrol-position: top left;
+            left: 10px;
+            margin-left: 2px;
+            padding: 0  0px;
+        }</string>
+    </property>
+    <property name="title">
+     <string>覆膜模块</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_LamModInit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>初始化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipin_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>可擦写出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipin_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清洁进卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipin_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清洁出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipin_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>可擦写进卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipin_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>轨道2出卡</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_Sort">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>270</y>
+      <width>431</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">      QGroupBox {
+            border-color: rgb(156, 156, 156);
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 0.5ex;
+			 background-color:grey;
+        }
+        QGroupBox::title {
+            subcontrol-origin: margin;
+            subcontrol-position: top left;
+            left: 10px;
+            margin-left: 2px;
+            padding: 0  0px;
+        }</string>
+    </property>
+    <property name="title">
+     <string>分拣模块</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_SortModInit">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>20</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>初始化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipin_10">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>60</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>矫正进卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipin_11">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>60</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>矫正出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipin_13">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>读卡器进卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipin_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>读卡器出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_SmFlipin_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>长轨道出卡</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="BatteryNew" name="widget_Battery_New" native="true">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>80</y>
+      <width>160</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="value" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+    <widget class="QLabel" name="label_Battery_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>67</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Battery_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>色带２</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="BatteryNew" name="widget_Battery_New_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>80</y>
+      <width>160</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="value" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+    <widget class="QLabel" name="label_Battery_4">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>67</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Battery_5">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>膜带２</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>270</y>
+      <width>151</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">      QGroupBox {
+            border-color: rgb(156, 156, 156);
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 0.5ex;
+			 background-color:grey;
+        }
+        QGroupBox::title {
+            subcontrol-origin: margin;
+            subcontrol-position: top left;
+            left: 10px;
+            margin-left: 2px;
+            padding: 0  0px;
+        }</string>
+    </property>
+    <property name="title">
+     <string>CIS核验</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>初始化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>过卡</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QRoundProgressBar" name="RoundBar_Slot2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>810</y>
+      <width>160</width>
+      <height>160</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRoundProgressBar" name="RoundBar_Slot1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>810</y>
+      <width>160</width>
+      <height>160</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRoundProgressBar" name="RoundBar_Slot3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>810</y>
+      <width>160</width>
+      <height>160</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QRoundProgressBar" name="RoundBar_Slot4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>810</y>
+      <width>160</width>
+      <height>160</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>780</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>卡槽1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>780</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>卡槽2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>780</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>卡槽3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>780</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>卡槽4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>970</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>已完成：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>970</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>1010</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>1010</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>出错：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>970</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>1010</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>970</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>已完成：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>1010</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>出错：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>970</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>1010</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>970</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>已完成：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>1010</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>出错：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>970</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>1010</y>
+      <width>31</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>970</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>已完成：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>1010</y>
+      <width>67</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>出错：</string>
+    </property>
+   </widget>
+   <widget class="QRoundProgressBar" name="roundProgressBar_DeviceCheck" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>380</y>
+      <width>310</width>
+      <height>310</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_AllInit">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>900</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>全部初始化</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget_img" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>380</y>
+      <width>391</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="BatteryNew" name="widget_Battery_New_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>80</y>
+      <width>160</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="value" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+    <widget class="QLabel" name="label_Battery_10">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>67</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Battery_11">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>膜带１</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="BatteryNew" name="widget_Battery_New_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>80</y>
+      <width>160</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="value" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+    <widget class="QLabel" name="label_Battery_12">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>67</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Battery_13">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>色带１</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="BatteryNew" name="widget_Battery_New_5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1380</x>
+      <y>80</y>
+      <width>160</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="value" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+    <widget class="QLabel" name="label_Battery_16">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>67</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>１</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Battery_17">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>91</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>卡数量</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="BatteryNew" name="widget_Battery_New_6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>80</y>
+      <width>160</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="value" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+    <widget class="QLabel" name="label_Battery_18">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>67</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Battery_19">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>清洁机构</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="BatteryNew" name="widget_Battery_New_7" native="true">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>80</y>
+      <width>160</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="value" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+    <widget class="QLabel" name="label_Battery_20">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>67</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Battery_21">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>膜带３</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="BatteryNew" name="widget_Battery_New_8" native="true">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>80</y>
+      <width>160</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="value" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+    <widget class="QLabel" name="label_Battery_22">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>67</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Battery_23">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>色带３</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="BatteryNew" name="widget_Battery_New_9" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>160</width>
+      <height>190</height>
+     </rect>
+    </property>
+    <property name="value" stdset="0">
+     <double>0.000000000000000</double>
+    </property>
+    <widget class="QLabel" name="label_Battery_26">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>67</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>10</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Battery_27">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>81</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>防伪膜</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_PrintMod1_2">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>270</y>
+      <width>151</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">      QGroupBox {
+            border-color: rgb(156, 156, 156);
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 0.5ex;
+			 background-color:grey;
+        }
+        QGroupBox::title {
+            subcontrol-origin: margin;
+            subcontrol-position: top left;
+            left: 10px;
+            margin-left: 2px;
+            padding: 0  0px;
+        }</string>
+    </property>
+    <property name="title">
+     <string>打印模块2</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_PrintMod2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>初始化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_WriteIn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>写卡进卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_WriteOut">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>写卡出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_Long">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>长轨道过卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_POut">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打印机出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_S2Out">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>轨道2出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_PIn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打印机进卡</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_PrintMod1_3">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>270</y>
+      <width>151</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">      QGroupBox {
+            border-color: rgb(156, 156, 156);
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 0.5ex;
+			 background-color:grey;
+        }
+        QGroupBox::title {
+            subcontrol-origin: margin;
+            subcontrol-position: top left;
+            left: 10px;
+            margin-left: 2px;
+            padding: 0  0px;
+        }</string>
+    </property>
+    <property name="title">
+     <string>打印模块3</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_PrintMod2_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>初始化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_WriteIn_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>写卡进卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_WriteOut_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>写卡出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_Long_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>长轨道过卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_POut_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打印机出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_S2Out_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>轨道2出卡</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_PM2_PIn_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>130</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>打印机进卡</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>0</y>
+      <width>1551</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_Send">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>590</y>
+      <width>461</width>
+      <height>171</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>610</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>600</y>
+      <width>31</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>接收</string>
+    </property>
+   </widget>
+   <widget class="LightButton" name="lightButton1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>920</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="statusBar" native="true">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>1048</y>
+      <width>1552</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>3</y>
+       <width>71</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>数据包</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar_DataPercent">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>4</y>
+       <width>321</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>3</y>
+       <width>131</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>1条待制证数据</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ConnectDB">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>720</y>
+      <width>141</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Oracle</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QRoundProgressBar</class>
+   <extends>QWidget</extends>
+   <header>QRoundProgressBar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BatteryNew</class>
+   <extends>QWidget</extends>
+   <header>batterynew.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LightButton</class>
+   <extends>QWidget</extends>
+   <header>control/lightbutton.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

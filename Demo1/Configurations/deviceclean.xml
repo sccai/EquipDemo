@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDeviceInfoModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--进卡模块 start-->
+  <!--发卡机构:包括翻转、清洁-->
+  <DeviceInfoModel>
+    <DeviceType>SendCardModule</DeviceType>
+    <DeviceName>进卡机构</DeviceName>
+    <DisplayName>进卡机构</DisplayName>
+    <DeviceSN>150</DeviceSN>
+    <DeviceID>150</DeviceID>
+    <DeviceIP>192.168.150.150</DeviceIP>
+    <DevicePort>5000</DevicePort>
+    <IsAllowSkip>false</IsAllowSkip>
+  </DeviceInfoModel>
+  <!--发卡槽-->
+  <DeviceInfoModel>
+    <DeviceType>CardSender</DeviceType>
+    <DeviceName>发卡器</DeviceName>
+    <DisplayName>发卡器</DisplayName>
+    <DeviceSN>8</DeviceSN>
+    <DeviceID>COM1</DeviceID>
+    <DeviceIP>1</DeviceIP>
+    <DevicePort>1</DevicePort>
+    <IsAllowSkip>false</IsAllowSkip>
+  </DeviceInfoModel>
+  <!--进卡模块 end-->
+  <!--打印模块 start-->
+  <DeviceInfoModel>
+    <DeviceType>PrinterModule</DeviceType>
+    <DeviceName>1号打印机构</DeviceName>
+    <DisplayName>1号打印机构</DisplayName>
+    <DeviceSN>1</DeviceSN>
+    <DeviceID>151</DeviceID>
+    <DeviceIP>192.168.150.151</DeviceIP>
+    <DevicePort>5000</DevicePort>
+    <IsOnline>true</IsOnline>
+    <IsAllowSkip>false</IsAllowSkip>
+  </DeviceInfoModel>
+  <!--机构二-->
+  <DeviceInfoModel>
+    <DeviceType>PrinterModule</DeviceType>
+    <DeviceName>2号打印机构</DeviceName>
+    <DisplayName>2号打印机构</DisplayName>
+    <DeviceSN>2</DeviceSN>
+    <DeviceID>152</DeviceID>
+    <DeviceIP>192.168.150.152</DeviceIP>
+    <DevicePort>5000</DevicePort>
+    <IsOnline>true</IsOnline>
+    <IsAllowSkip>false</IsAllowSkip>
+  </DeviceInfoModel>
+  <!--机构三-->
+  <DeviceInfoModel>
+    <DeviceType>PrinterModule</DeviceType>
+    <DeviceName>3号打印机构</DeviceName>
+    <DisplayName>3号打印机构</DisplayName>
+    <DeviceSN>3</DeviceSN>
+    <DeviceID>153</DeviceID>
+    <DeviceIP>192.168.150.153</DeviceIP>
+    <DevicePort>5000</DevicePort>
+    <IsOnline>true</IsOnline>
+    <IsAllowSkip>false</IsAllowSkip>
+  </DeviceInfoModel>
+  <!--打印模块 end-->
+  <!--覆膜模块 start-->
+  <!--机构-->
+  <DeviceInfoModel>
+    <DeviceType>ErasableLaminatinModule</DeviceType>
+    <DeviceName>覆膜机构</DeviceName>
+    <DisplayName>覆膜机构</DisplayName>
+	<DeviceSN>1</DeviceSN>
+    <DeviceID>155</DeviceID>
+    <DeviceIP>192.168.150.155</DeviceIP>
+    <DevicePort>5000</DevicePort>
+    <IsAllowSkip>false</IsAllowSkip>
+  </DeviceInfoModel>
+  <!--覆膜机-->
+  <DeviceInfoModel>
+    <DeviceType>Lamination</DeviceType>
+    <DeviceName>覆膜机</DeviceName>
+    <DisplayName>覆膜机</DisplayName>
+	<DeviceSN>30</DeviceSN>
+    <DeviceID>30</DeviceID>
+    <DeviceIP>192.168.150.30</DeviceIP>
+    <DevicePort>9100</DevicePort>
+    <DeviceInternalID>17830452</DeviceInternalID>
+    <DeviceName>Laminator</DeviceName>
+    <IsAllowSkip>false</IsAllowSkip>
+  </DeviceInfoModel>
+  <!--覆膜模块 end-->
+  <!--分拣模块 start-->
+  <!--机构-->
+  <DeviceInfoModel>
+    <DeviceType>SortingModule</DeviceType>
+    <DeviceName>分拣机构</DeviceName>
+    <DisplayName>分拣机构</DisplayName>
+	<DeviceSN>157</DeviceSN>
+    <DeviceID>157</DeviceID>
+    <DeviceIP>192.168.150.157</DeviceIP>
+    <DevicePort>5000</DevicePort>
+    <IsAllowSkip>false</IsAllowSkip>
+  </DeviceInfoModel>
+</ArrayOfDeviceInfoModel>

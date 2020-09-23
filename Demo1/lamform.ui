@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LamForm</class>
+ <widget class="QWidget" name="LamForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>991</width>
+    <height>781</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_Lam">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>70</y>
+     <width>871</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">      QGroupBox {
+            border-color: rgb(156, 156, 156);
+            border-width: 1px;
+            border-style: solid;
+            margin-top: 0.5ex;
+			 background-color:grey;
+        }
+        QGroupBox::title {
+            subcontrol-origin: margin;
+            subcontrol-position: top left;
+            left: 10px;
+            margin-left: 2px;
+            padding: 0  0px;
+        }</string>
+   </property>
+   <property name="title">
+    <string>覆膜模块</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_LamModInit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>初始化</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_LamCleanSlide">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>130</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清洁轨道</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_LamShortSlideOut">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>70</y>
+      <width>130</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>轨道2出卡</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_LamCacheCardIn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>130</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CacheCardIn</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_LamCacheCardOut">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>70</y>
+      <width>130</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CacheCardOut</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_LamCleanCardIn">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>70</y>
+      <width>130</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CleanCardIn</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_LamCleanCardOut">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>70</y>
+      <width>130</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>CleanCardOut</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_LamShortSlide2In">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>70</y>
+      <width>130</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>轨道2CardIn</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_Send">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>440</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>270</y>
+     <width>41</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Receive</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>270</y>
+     <width>440</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>270</y>
+     <width>31</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Send</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

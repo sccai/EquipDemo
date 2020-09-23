@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ParamterInfoModel>
+    <Settings>
+        <title>Print1Using</title>
+        <value>true</value>
+    </Settings>
+    <Settings>
+        <title>Print2Using</title>
+        <value>false</value>
+    </Settings>
+    <Settings>
+        <title>Print3Using</title>
+        <value>false</value>
+    </Settings>
+    <Settings>
+        <title>PrintModel1</title>
+        <value>true</value>
+    </Settings>
+    <Settings>
+        <title>PrintModel2</title>
+        <value>false</value>
+    </Settings>
+    <Settings>
+        <title>PrintModel3</title>
+        <value>false</value>
+    </Settings>
+    <Settings>
+        <title>Lam_IsUsing</title>
+        <value>false</value>
+    </Settings>
+    <Settings>
+        <title>EPrint_IsUsing</title>
+        <value>false</value>
+    </Settings>
+    <Settings>
+        <title>EPrint_IsClearBefore</title>
+        <value>false</value>
+    </Settings>
+</ParamterInfoModel>
